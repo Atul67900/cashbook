@@ -1,0 +1,331 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    /* border: 1px solid #000; */
+}
+:root{
+    --blue: rgb(9, 99, 255);
+    --white: #fff;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+}
+header{
+    background: var(--blue);
+    padding: 10px 0;
+    text-align: center;
+}
+header h1{
+    color: var(--white);
+    font-size: 50px;
+}
+.search-box{
+    position: absolute;
+    top: 20px;
+    right: 10%;
+    display: flex;
+}
+.search-box input{
+    padding: 2px 5px;
+    height: 40px;
+    font-size: 20px;
+    border: 2px solid #000;
+    box-shadow: 0 0 10px #fff;
+    border-radius: 5px;
+}
+.search-box button{
+    padding: 5px 10px;
+    font-size: 20px;
+    margin-top: 0;
+    margin-left: 5px;
+    box-shadow: 0 0 10px #fff;
+    color: var(--blue);
+    cursor: pointer;
+}
+
+nav{
+    width: 80%;
+    padding: 30px 20px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    /* border: 1px solid #000; */
+}
+.left-part{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 60%;
+}
+.left-part h1{
+    font-size: 30px;
+
+}
+.inward-bal, h4{
+    color: green;
+    /* text-align: center */
+}
+.inward-bal span{
+    color: green;
+    font-size: 30px;
+    font-weight: 600;
+}
+.outward-bal h4{
+    color: red;
+    
+}
+.outward-bal span{
+    color: red;
+    font-size: 30px;
+    font-weight: 600;
+}
+.bal-amt h4{
+    color: orange;
+}
+.bal-amt span{
+    color: orange;
+    font-size: 30px;
+    font-weight: 600;
+}
+.addentry-btn-area button{
+    padding: 10px 30px;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--white);
+    background: var(--blue);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #000;
+    cursor: pointer;
+}
+.form-area{
+    background: var(--white);
+    /* padding: 20px 0; */
+    width: 22rem;
+    /* position: absolute; */
+    /* top: -100vh; */
+    /* left: 37%; */
+    border: 5px solid var(--blue);
+    display: block;
+    box-shadow: 0 0 20px #000;
+
+}
+.form-area-parent{
+    width: 100%;
+    /* background-size: cover; */
+    position: absolute;
+    height: 100vh;
+    top: -110vh;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: top 1s;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 50px 0;
+}
+.form-area h2, label{
+    padding: 0px 10px;
+}
+.form-upperpart{
+    background:  var(--white);
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    /* margin-bottom: 20px; */
+}
+.upper-left{
+    width: 48%;
+    background: var(--white);
+    padding: 10px 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    color: red;
+    border: 1px solid #333;
+    cursor: pointer;
+}
+.upper-right{
+    width: 48%;
+    background: var(--white);
+    padding: 10px 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    color: green;
+    border: 1px solid #333;
+    cursor: pointer;
+}
+.form-bottom-part{
+    margin: 0 auto;
+    width: 90%;
+    overflow: hidden;
+}
+.form-bottom-part input, select, textarea, button{
+    width: 100%;
+    padding: 5px 3px;
+    margin: 10px auto;
+    border: 2px solid var(--blue);
+    border-radius: 5px;
+    box-shadow: 0 0 10px var(--blue);
+}
+.save-btn{
+    background: var(--blue);
+    box-shadow: none;
+    color: var(--white);
+    font-size: 20px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.another-btn{
+    background: var(--white);
+    font-size: 20px;
+    cursor: pointer;
+}
+.save-btn:hover{
+    background: rgb(0, 51, 255);
+    font-size: 25px;
+    box-shadow: 0 0 20px var(--blue);
+}
+.entry-area{
+    /* border: 2px solid var(--blue); */
+    margin-top: 50px;
+    width: 90%;
+    margin: 0 auto;
+    
+}
+.top-part{
+    width: 100%;
+    background: var(--blue);
+    padding: 20px 0;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    color: var(--white);
+}
+.box1{
+    width: 10%;
+}
+.box2{
+    width: 40%;
+}
+.box3{
+    width: 15%;
+}
+.box4{
+    width: 12%;
+    color: red;
+}
+.box6{
+    width: 7%;
+    /* color: red; */
+}
+.box5{
+    width: 12%;
+    color: rgb(28, 192, 28);
+}
+.container-fluid{
+    padding: 20px;
+    border: 1px dotted #333;
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+.active{
+    border: 2px solid var(--blue);
+    box-shadow: 0 0 10px var(--blue);
+}
+.entryCard{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-weight: 600;
+    border: 2px solid #3333;
+    padding: 5px 0;
+}
+/* .cash-minus-entry{
+    display: none;
+}
+.cash-added-entry{
+    display: none;
+} */
+
+#addAmt{
+    display: none;
+}
+#addAmt-minus{
+    display: none;
+}
+
+
+
+
+
+@media(max-width: 700px){
+    header{
+        display: block;
+    }
+    .search-box{
+        position: static;
+    }
+    .search-box input{
+        padding: 2px;
+        font-size: 15px;
+        width: 250px;
+        margin-left: 20px;
+        height: 40px;
+    }
+    .search-box button{
+        padding: 0;
+        font-size: 15px;
+        width: 80px;
+        height: 40px;
+    }
+    nav{
+        width: 90%;
+    }
+    .left-part{
+        display: block;
+    }
+    .addentry-btn-area button{
+        font-size: 17px;
+        padding: 10px;
+    }
+    .entry-area{
+        width: 95%;
+    }
+    .top-part h3{
+        font-size: 12px;
+    }
+    .top-part h2{
+        font-size: 13px;
+    
+    }.entryCard{
+        width: 100%;
+    }
+    .entryCard p{
+        font-size: 10px;
+    }
+    .container-fluid{
+        padding: 0;
+    }
+    .box1{
+        width: 15%;
+    }
+    .box2{
+        width: 32%;
+    }
+    span{
+        font-size: 12px;
+    }
+    .entryCard button{
+        font-size: 10px;
+        /* padding: 5px; */
+        width: 50px;
+        padding: 2px;
+    }
+}

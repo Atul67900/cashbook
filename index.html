@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CASH BOOK</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>CASH BOOK</h1>
+            <div class="search-box">
+                <input type="search" id="search" placeholder="Type to Search">
+                <button>Search</button>
+            </div>
+        </header>
+
+        <nav>
+            <div class="left-part">
+                <div class="inward-bal">
+                    <h4>Credited Amount</h4>
+                    <span id="positive"></span>
+                </div>
+                <div class="outward-bal">
+                    <h4>Debited Amount</h4>
+                    <span id="negative"></span>
+                </div>
+                <div class="bal-amt">
+                    <h4>Balance Amount</h4>
+                    <span id="balanceAmt"></span>
+                </div>
+            </div>
+            <div class="right-part">
+                <div class="addentry-btn-area">
+                    <button type="button" onclick="show()">ADD ENTRY</button>
+                </div>
+            </div>
+        </nav>
+        <div class="form-area-parent" id="menu">
+            <div class="form-area">
+                <h2>ADD ENTRY</h2>
+                <label>Select Transaction Type</label>
+                <div class="form-upperpart">
+                    <div onclick="showMinus()" class="upper-left">
+                        <h3>You paid</h3>
+                    </div>
+                    <div onclick="showPlus()" class="upper-right">
+                        <h3>You Took</h3>
+                    </div>
+                </div>
+                <div class="form-bottom-part">
+                    <div class="entry-type">
+                        <div class="cash-added-entry">
+                            <label>To/From</label>
+                            <input type="text" id="addName" placeholder="Enter Name">
+                            <!-- <select id="addName">
+                                <option>Select</option>
+                                <option>Atul</option>
+                                <option>Umesh</option>
+                                <option>Another</option>
+                            </select> -->
+                            <label>Amount</label><br>
+                            <input type="number" id="addAmt" placeholder="Type Amount">
+                            <input type="number" id="addAmt-minus" placeholder="Type Amount">
+                            <label>Write Note</label>
+                            <textarea rows="5" cols="49" id="addTxt" placeholder="Type Here"></textarea>
+                            <input type="date" id="addDate">
+                            <button onclick="hide()" id="addBtn" class="save-btn">Submit</button>
+                        </div>
+                    </div>
+                    <button onclick="hide()" class="another-btn">Cancel</button>
+                </div>
+            </div>
+        </div>
+        <div class="entry-area">
+            <div class="top-part">
+                <div class="box1">
+                    <h3>Date</h3>
+                </div>
+                <div class="box2">
+                    <h3>Descripton</h3>
+                </div>
+                <div class="box3">
+                    <h3>Name</h3>
+                </div>
+                <div class="box4">
+                    <h2>Debit</h2>
+                </div>
+                <div class="box5">
+                    <h2>Credit</h2>
+                </div>
+            </div>
+            <div id="notes" class="container-fluid">
+                
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-1.6.2.js" integrity="sha256-pXKSYZ0U64y9kjvenyjPmUrGarxI98l1t2kyj/M73ck=" crossorigin="anonymous"></script>
+    <script src="file.js"></script>
+</body>
+
+</html>
